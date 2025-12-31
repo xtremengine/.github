@@ -19,7 +19,7 @@ Uma engine de jogos modular com ECS e renderização isométrica 3D.
 
 ```bash
 # Clonar e compilar
-git clone https://github.com/your-username/xtreme-engine.git
+git clone https://github.com/xtremengine/xtreme.git
 cd xtreme-engine
 cargo build
 
