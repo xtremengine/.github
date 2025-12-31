@@ -1,50 +1,58 @@
 # Xtreme Labs
 
-Bem-vindo à organização **Xtreme Labs**, focada em construir tecnologia de jogos modular e moderna em Rust. Aqui você encontrará projetos que combinam ECS de alta performance, renderização isométrica 3D e ferramentas de IA para acelerar o desenvolvimento de jogos.
+Welcome to the **Xtreme Labs** organization, focused on building modern, modular game technology in Rust. Here you'll find projects that combine high-performance ECS, 3D isometric rendering, and AI tools to accelerate game development.
 
-## Projetos
+## Projects
 
 ### Xtreme Engine
 
-Uma engine de jogos modular com ECS e renderização isométrica 3D.
+A modular game engine with ECS and 3D isometric rendering.
 
-- **ECS de alto desempenho**: entidades com gerações, armazenamento cache-friendly e agendador de sistemas com estágios configuráveis.
-- **Renderização WGPU**: suporte Vulkan, DirectX 12, Metal e WebGPU, câmera isométrica e integração com Egui.
-- **Física**: formas de colisão (AABB, esfera, OBB), grade espacial e raycasts rápidos.
-- **IA e Navegação**: pathfinding A*, NavMesh, sistema de percepção e inferência opcional via ONNX Runtime.
-- **Editor Visual**: viewport 3D, hierarquia de entidades, inspector, browser de assets, histórico de comandos e modo Play.
-- **Scripting opcional**: integração com Python via pyo3, com callbacks de ciclo de vida.
+- **High-performance ECS**: entities with generations, cache-friendly storage, and a system scheduler with configurable stages.
 
-#### Como experimentar
+- **WGPU rendering**: Vulkan, DirectX 12, Metal, and WebGPU support, isometric camera, and Egui integration.
+
+- **Physics**: collision shapes (AABB, sphere, OBB), spatial grid, and fast raycasts.
+
+- **AI and Navigation**: A* pathfinding, NavMesh, perception system, and optional inference via ONNX Runtime.
+
+- **Visual Editor**: 3D viewport, entity hierarchy, inspector, asset browser, command history, and Play mode.
+
+- **Optional Scripting**: Python integration via pyo3, with lifecycle callbacks.
+
+### How to try it
 
 ```bash
-# Clonar e compilar
+# Clone and compile
 git clone https://github.com/xtremengine/xtreme.git
 cd xtreme
 cargo build
 
-# Executar o editor visual
+# Run the visual editor
 cargo run --example editor
 ```
 
-Para usar como dependência em outro projeto, adicione no `Cargo.toml`:
+To use as a dependency in another project, add to `Cargo.toml`:
 
 ```toml
 [dependencies]
 xtreme-engine = "0.1"
 ```
 
-Consulte os exemplos disponíveis (`hello_triangle`, `isometric_camera`, `editor`) com `cargo run --example <nome>`.
+See the available examples (`hello_triangle`, `isometric_camera`, `editor`) with `cargo run --example <name>`.
 
-## Como contribuir
+## How to contribute
 
-1. Abra uma issue ou participe das discussões para alinhar ideias.
-2. Faça um fork, crie um branch de feature (`git checkout -b feature/sua-ideia`) e envie um PR.
-3. Garanta que o código passa por `cargo fmt`, `cargo clippy --all-features -- -D warnings` e `cargo test`.
+1. Open an issue or participate in the discussions to align ideas.
 
-## Licença
+2. Fork the repository, create a feature branch (`git checkout -b feature/your-idea`) and submit a PR.
 
-Os projetos da organização são licenciados sob MIT. Veja o arquivo `LICENSE` em cada repositório para detalhes.
+3. Ensure the code passes `cargo fmt`, `cargo clippy --all-features -- -D warnings`, and `cargo test`.
+
+## License
+
+The organization's projects are licensed under MIT. See the `LICENSE` file in each repository for details.
+
 Footer
 © 2025 GitHub, Inc.
 Footer navigation
